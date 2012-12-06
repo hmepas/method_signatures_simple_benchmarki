@@ -6,7 +6,10 @@ sub new {
     bless { @_ }, $class;
 }
 
-sub set { $_[0]->{$_[1]} = $_[2] }
-sub get { $_[0]->{$_[1]} }
+sub set_name { $_[0]->{name} = $_[1] }
+sub name { $_[0]->{name} }
+
+sub set_age { $_[0]->{age} = $_[1] }
+sub age { $_[0]->{age} }
 
 1;
